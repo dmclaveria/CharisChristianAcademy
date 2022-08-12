@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="otherbody">
+
+
+    <!--Navigation Bar-->
+    <section>
+        <nav class="navbar navbar-expand-lg  fixed-top border" id="navbar">
+            <div class="container">
+                <div>
+                <a href="index.html" class="navbar-brand"><img src="Images/home/Logo.png" alt="" style="height: 5rem;"></a>
+                </div>   
+                <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+    
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Education</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gradeoffer.html">Grade Offer</a></li>
+                                <li><a class="dropdown-item" href="#">Scholarship and Discounts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our School</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="principal.html">Principal</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                                <li><a class="dropdown-item" href="#">Policies</a></li>
+                                <li><a class="dropdown-item" href="#">Awards and Accreditation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Community</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="newsandann.html">News and Events</a></li>
+                                <li><a class="dropdown-item" href="#">Parents Association</a></li>
+                                <li><a class="dropdown-item" href="#">Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="schoold.html">School Details</a></li>
+                                <li><a class="dropdown-item" href="cntcarrer.html">Career</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+    
+        </nav>
+        </section>
+
+
+         <!--Main content-->
+         <section id="test">
+            <div class="container d-flex justify-content-center align-items-center" id="contentsectionprincipal">
+                <div class="row">
+                    <h1 class="text-center border-bottom border-5 p-5 mb-5">Message from the Administrator</h1>
+                    <div class="col-lg-4 d-none d-md-block pe-5">
+                        <img class="float-end shadow rounded-5 border border-bottom-0" src="images/principal.png" class="rounded border shadow col-auto d-none d-lg-block" height="400px" alt="..." >
+                    </div>
+                    <div class="col-md-12 col-lg-8 mt-5">
+                        <h4 class="fs-2">Shalom!</h4>
+                        <p class="fs-6 lh-lg">
+
+                            It is our priveleged to partner with you in developing your child's full potential.<br>
+                            
+                            Thank you for entrusting your child/children to us. Believing that God will do above and beyond what you expect to see to your child as they come to CCAFI. <br>
+                            
+                            It may takes a long process that is why your support and cooperation is very important.<br>
+                            
+                            All for the best of our pupils!<br>
+                            
+                            
+                            REV. MARICON F. MAGUNDAYAO<br>
+                            Administrator</p>
+                    </div>
+                    
+                </div>
+            </div>
+         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--scripts-->
+            <script>
+                window.onscroll = function () {
+                  scrollFunction();
+                };
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    var element = document.getElementById("navbar");
+                    element.classList.add("navchg");
+                    element.classList.add("shadow");
+                  } else if (
+                    document.body.scrollTop < 49 ||
+                    document.documentElement.scrollTop < 49
+                  ) {
+                    var element = document.getElementById("navbar");
+                    element.classList.remove("navchg");
+                    element.classList.remove("shadow");
+                  }
+                }
+          </script>
+        
+        
+            <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        
+    </body>
+    </html>
